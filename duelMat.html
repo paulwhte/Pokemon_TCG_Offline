@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Duel Mat: Pkmn TCG Offline</title>
+
+
+        <!-- CSS files -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/pure/base/base.css" rel="stylesheet" type="text/css" />
+        <link href="css/pure/menus/menus-core.css" rel="stylesheet" type="text/css" />
+        <link href="css/pure/menus/menus-dropdown.css" rel="stylesheet" type="text/css" />
+        <link href="css/pure/menus/menus-horizontal.css" rel="stylesheet" type="text/css" />
+        <link href="css/pure/menus/menus-skin.css" rel="stylesheet" type="text/css" />
+
+        <!-- JS files -->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="js/duelEngine/beginDuel.js"></script>
+
+        <!-- Viewport responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+
+    <body>
+        <!-- Load up nav menu -->
+        <script>
+            $(function(){
+                $("#nav-placeholder").load("nav.html");
+            });
+        </script>
+        
+        <div id="nav-placeholder"></div>
+
+        <div id="body-content">
+            <h2>Pkmn TCG Offline: Duel</h2>
+            <button onclick="initiateDuelMat()">Start Duel</button>
+            <hr>
+            <canvas id="duelCanvas" width="600px" height="400px"></canvas>
+        </div>
+    </body>
+</html>

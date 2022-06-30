@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Build a Deck: Pkmn TCG Offline</title>
+
+
+        <!-- CSS files -->
+        <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <link href="css/pure/base/base.css" rel="stylesheet" type="text/css" />
+        <link href="css/pure/menus/menus-core.css" rel="stylesheet" type="text/css" />
+        <link href="css/pure/menus/menus-dropdown.css" rel="stylesheet" type="text/css" />
+        <link href="css/pure/menus/menus-horizontal.css" rel="stylesheet" type="text/css" />
+        <link href="css/pure/menus/menus-skin.css" rel="stylesheet" type="text/css" />
+
+        <!-- JS files -->
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="js/cardData.js"></script>
+        <script src="js/deckData.js"></script>
+
+        <!-- Viewport responsive -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+
+
+    <body>
+        <!-- Code for page load -->
+        <script>
+            //Load Nav Menu
+            $(function(){
+                $("#nav-placeholder").load("nav.html");
+            });
+
+        </script>
+        
+        <div id="nav-placeholder"></div>
+
+        <div id="body-content">
+            <h2>Pkmn TCG Offline: Build Deck</h2>
+
+            <!-- Area for making a new deck -->
+            <div id="left-side">
+                <h3>New Deck: Choose cards</h3>
+
+                <table id="deck-build-menu">
+                    <tr>
+                        <!-- <th>Name</th><th>Level</th><th>Set</th> -->
+                    </tr>
+                </table>
+
+                <br>
+                <input type="text" id="deckName" placeholder="Deck Name">
+                <button onclick="compileDeckData()" id="saveDeck">Save Deck</button>
+            </div>
+
+            <!-- Area for looking at old decks -->
+            <div id="right-side">
+                <h3>Existing Deck Search</h3>
+                <input type="text" placeholder="Search for deck" id="existing-deck">
+                <button onclick="searchDecksAndPopulate()" id="existing-deck-button">Search for deck</button>
+                <div>
+                    <table id="existing-deck-placeholder">
+
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Code for deck search enter event listener -->
+        <script>
+            //Set event listener for card search input
+            var deckSaveInput = document.getElementById("deckName");
+
+            // Click search button when enter is hit
+            deckSaveInput.addEventListener("keyup", function(event) 
+            {
+                // Number 13 is the "Enter" key on the keyboard
+                if (event.keyCode === 13) {
+                    // Trigger the button to search for deck
+                    document.getElementById("saveDeck").click();
+                }
+            });
+
+            //Set event listener for card search input
+            var deckSearchInput = document.getElementById("existing-deck");
+
+            // Click search button when enter is hit
+            deckSearchInput.addEventListener("keyup", function(event) 
+            {
+                // Number 13 is the "Enter" key on the keyboard
+                if (event.keyCode === 13) {
+                    // Trigger the button to search for deck
+                    document.getElementById("existing-deck-button").click();
+                }
+            });
+
+
+        </script>
+    </body>
+</html>

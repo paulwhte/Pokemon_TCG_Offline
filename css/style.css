@@ -1,0 +1,51 @@
+#nav-placeholder
+{
+    background-color: #c7c7c7;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#body-content
+{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#deck-build-menu
+{
+    margin-top: 15px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+#existing-deck-placeholder
+{
+    margin-top: 15px;
+    width: 300px;
+    border: 1px solid black;
+}
+
+.deckNumInput
+{
+    width: 30px;
+    float: right;
+}
+
+#left-side
+{
+    width: 50%;
+    float: left;
+}
+
+#right-side
+{
+    width: 50%;
+    float: right;
+}
+
+#duelCanvas
+{
+    background-color: lightgrey;
+}
