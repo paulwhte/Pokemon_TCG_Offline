@@ -15,14 +15,14 @@
             <li>Begin match (shuffle decks, select prize cards, draw hands).</li>
             <li>Draw card into hand.</li>
             <li>Drag/drop cards freely.</li>
-            <li>Discard card from hand and play mat<li>
+            <li>Discard card from hand and play mat</li>
             <li>Search and draw from discard pile</li>
             <li>Shuffle deck.</li>
-            <li>Snapping to various places on the mat: active pokemon, benched pokemon, attached energy<li>
+            <li>Snapping to various places on the mat: active pokemon, benched pokemon, attached energy</li>
         </ul>
         <li>QOL Usability Improvements</li>
         <ul>
-            <li>Improve UI to be more intuitive and stop users from making mistakes<li>
+            <li>Improve UI to be more intuitive and stop users from making mistakes</li>
             <li>Import/Export data as backup and for sharing.</li>
         </ul>
     </ul>
